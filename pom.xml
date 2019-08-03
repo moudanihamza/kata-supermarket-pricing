@@ -12,6 +12,7 @@
         <java.version>1.8</java.version>
     </properties>
     <build>
+        <sourceDirectory>src/main/java</sourceDirectory>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -37,9 +38,6 @@
                         <goals>
                             <goal>report</goal>
                         </goals>
-                        <configuration>
-                            <outputDirectory>target/jacoco-report</outputDirectory>
-                        </configuration>
                     </execution>
                 </executions>
             </plugin>
